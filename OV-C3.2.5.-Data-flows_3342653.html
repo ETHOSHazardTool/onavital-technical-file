@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ONALABS QMS : OV C3.2.5. Data flows</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">ONALABS QMS</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="OV-ONAVITAL-MDR-Product-Technical-File_3342337.html">OV ONAVITAL MDR Product Technical File</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="3342576.html">OV Part C: Design and Manufacturing Information</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="OV-C3.2.-Detailed-Design_3342611.html">OV C3.2. Detailed Design</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            ONALABS QMS : OV C3.2.5. Data flows
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                            
+        
+    
+        
+    
+        
+        
+            Created by <span class='author'> Richard Bunney</span>, last modified by <span class='editor'> Jaime Punter</span> on May 20, 2025
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <p><span class="status-macro aui-lozenge aui-lozenge-visual-refresh aui-lozenge-error">COMPANY CONFIDENTIAL</span> <span class="status-macro aui-lozenge aui-lozenge-visual-refresh aui-lozenge-error">UNCONTROLLED IF PRINTED</span></p><p>Owner: Jaime Punter, CTO and Quality Representative</p><div class="ap-container" id="ap-com.automation-consultants.accloud.approvalmacro__ApprovalsStatusMacro9162590466590218027">
+
+  <div class="ap-content " id="embedded-com.automation-consultants.accloud.approvalmacro__ApprovalsStatusMacro9162590466590218027"></div>
+  <script nonce="528a568c4bd9f0fff5a3a25050ba0fb5" class="ap-iframe-body-script">
+  (function(){
+    var data = {
+    "addon_key":"com.automation-consultants.accloud.approvalmacro",
+    "uniqueKey":"com.automation-consultants.accloud.approvalmacro__ApprovalsStatusMacro9162590466590218027",
+    "key":"ApprovalsStatusMacro",
+     "moduleType":"dynamicContentMacros",      "moduleLocation":"content",         "cp":"/wiki",
+            "general":"",
+    "w":"",
+    "h":"",
+    "url":"https://ac-cloud.com/approvalmacro/macro/page-status/display?xdm_e=https%3A%2F%2Fonalabs.atlassian.net&xdm_c=channel-com.automation-consultants.accloud.approvalmacro__ApprovalsStatusMacro9162590466590218027&cp=%2Fwiki&xdm_deprecated_addon_key_do_not_use=com.automation-consultants.accloud.approvalmacro&lic=active&cv=1000.0.0-c58bc7260813&traceId=04d793a420d0ff455de108607cc0f227&spanId=6b3d1a043a719045&traceSampled=0&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDU0OTY2Yjk0ZDdiOTAwNjkwMmRkMWUiLCJxc2giOiJjZmRiMWY4ZjY2YzM0NThhNjczOGU1MzI3MmYxODVhODUwZjYzYzU1NzQzNmRlZTUyMWQxMTk4YjFkZjczM2Y1IiwiaXNzIjoiNzdjODA3YTAtMmNjNy0zZWVjLWEzNDItOWQzYzYyZjUwZWE0IiwiY29udGV4dCI6e30sImV4cCI6MTc1MTI5NTI5OSwiaWF0IjoxNzUxMjk1MTE5fQ.XCLK4yDiAvbx_PmW5rkHMH-dWysvNGNMXICzFMryvQU",
+     "contextJwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDU0OTY2Yjk0ZDdiOTAwNjkwMmRkMWUiLCJxc2giOiJjb250ZXh0LXFzaCIsImlzcyI6Ijc3YzgwN2EwLTJjYzctM2VlYy1hMzQyLTlkM2M2MmY1MGVhNCIsImNvbnRleHQiOnsibGljZW5zZSI6eyJhY3RpdmUiOnRydWV9LCJjb25mbHVlbmNlIjp7ImVkaXRvciI6eyJ2ZXJzaW9uIjoidjIifSwibWFjcm8iOnsib3V0cHV0VHlwZSI6Imh0bWxfZXhwb3J0IiwiaGFzaCI6IjY0YTJkZWU2LWI0ODgtNDFlOC1hNWRhLTBhY2Y5ODM2ZDFhMyIsImlkIjoiNjRhMmRlZTYtYjQ4OC00MWU4LWE1ZGEtMGFjZjk4MzZkMWEzIn0sInRyYWNpbmciOnsidHJhY2VJZCI6IjA0ZDc5M2E0MjBkMGZmNDU1ZGUxMDg2MDdjYzBmMjI3Iiwic3BhbklkIjoiNmIzZDFhMDQzYTcxOTA0NSIsInNhbXBsZWQiOiIwIn0sImNvbnRlbnQiOnsidHlwZSI6InBhZ2UiLCJ2ZXJzaW9uIjoiNyIsImlkIjoiMzM0MjY1MyJ9LCJzcGFjZSI6eyJrZXkiOiJPTkFMQUJTUU1TIiwiaWQiOiIyNzUyNTEyIn19LCJ1cmwiOnsiZGlzcGxheVVybCI6Imh0dHBzOlwvXC9vbmFsYWJzLmF0bGFzc2lhbi5uZXRcL3dpa2kifX0sImV4cCI6MTc1MTI5NjAxOSwiaWF0IjoxNzUxMjk1MTE5fQ.wCSyrgyUr6FUTc9QXs29-Mv-FBUM2uvZru_RShjjEwU",    "structuredContext": "{\"license\":{\"active\":true},\"confluence\":{\"editor\":{\"version\":\"v2\"},\"macro\":{\"outputType\":\"html_export\",\"hash\":\"64a2dee6-b488-41e8-a5da-0acf9836d1a3\",\"id\":\"64a2dee6-b488-41e8-a5da-0acf9836d1a3\"},\"tracing\":{\"traceId\":\"04d793a420d0ff455de108607cc0f227\",\"spanId\":\"6b3d1a043a719045\",\"sampled\":\"0\"},\"content\":{\"type\":\"page\",\"version\":\"7\",\"id\":\"3342653\"},\"space\":{\"key\":\"ONALABSQMS\",\"id\":\"2752512\"}},\"url\":{\"displayUrl\":\"https://onalabs.atlassian.net/wiki\"}}",
+    "contentClassifier":"content",
+    "productCtx":"{\"page.id\":\"3342653\",\"macro.hash\":\"64a2dee6-b488-41e8-a5da-0acf9836d1a3\",\"space.key\":\"ONALABSQMS\",\"tracing.sampled\":\"0\",\"page.type\":\"page\",\"content.version\":\"7\",\"page.title\":\"OV C3.2.5. Data flows\",\"macro.localId\":\"39755e13-27e9-4dcf-ad44-a04ede11748f\",\"macro.body\":\"\",\": = | RAW | = :\":null,\"space.id\":\"2752512\",\"macro.truncated\":\"false\",\"content.type\":\"page\",\"output.type\":\"html_export\",\"page.version\":\"7\",\"macro.fragmentLocalId\":\"\",\"content.id\":\"3342653\",\"tracing.traceId\":\"04d793a420d0ff455de108607cc0f227\",\"macro.id\":\"64a2dee6-b488-41e8-a5da-0acf9836d1a3\",\"tracing.spanId\":\"6b3d1a043a719045\",\"user.isExternalCollaborator\":\"false\",\"editor.version\":\"v2\"}",
+    "timeZone":"GB",
+    "origin":"https://ac-cloud.com",
+    "hostOrigin":"https://onalabs.atlassian.net",
+    "sandbox":"allow-downloads allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-scripts allow-same-origin allow-top-navigation-by-user-activation allow-storage-access-by-user-activation",    "pearApp":"true",        "apiMigrations": {
+        "gdpr": true
+    }
+}
+;
+    if(window.AP && window.AP.subCreate) {
+      window._AP.appendConnectAddon(data);
+    } else {
+      require(['ac/create'], function(create){
+        create.appendConnectAddon(data);
+      });
+    }
+
+    // For Confluence App Analytics. This code works in conjunction with CFE's ConnectSupport.js.
+    // Here, we add a listener to the initial HTML page that stores events if the ConnectSupport component
+    // has not mounted yet. In CFE, we process the missed event data and disable this initial listener.
+    const __MAX_EVENT_ARRAY_SIZE__ = 20;
+    const connectAppAnalytics = "ecosystem.confluence.connect.analytics";
+    window.connectHost && window.connectHost.onIframeEstablished((eventData) => {
+      if (!window.__CONFLUENCE_CONNECT_SUPPORT_LOADED__) {
+        let events = JSON.parse(window.localStorage.getItem(connectAppAnalytics)) || [];
+        if (events.length >= __MAX_EVENT_ARRAY_SIZE__) {
+          events.shift();
+        }
+        events.push(eventData);
+        window.localStorage.setItem(connectAppAnalytics, JSON.stringify(events));
+      }
+    });
+
+  }());
+</script>
+
+</div>
+<p /><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1751295119529 {padding: 0px;}
+div.rbtoc1751295119529 ul {list-style: disc;margin-left: 0px;}
+div.rbtoc1751295119529 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1751295119529'>
+<ul class='toc-indentation'>
+<li><a href='#OVC3.2.5.Dataflows-1.Purpose'>1. Purpose</a></li>
+<li><a href='#OVC3.2.5.Dataflows-2.CollectedData'>2. Collected Data</a>
+<ul class='toc-indentation'>
+<li><a href='#OVC3.2.5.Dataflows-2.1PersonalData'>2.1 Personal Data</a></li>
+<li><a href='#OVC3.2.5.Dataflows-2.2PhysiologicalParameters'>2.2 Physiological Parameters</a></li>
+<li><a href='#OVC3.2.5.Dataflows-2.3Metadata'>2.3 Metadata</a></li>
+</ul>
+</li>
+<li><a href='#OVC3.2.5.Dataflows-3.DataFlows.'>3. Data Flows.</a></li>
+<li><a href='#OVC3.2.5.Dataflows-4.DataPrivacy.'>4. Data Privacy.</a>
+<ul class='toc-indentation'>
+<li><a href='#OVC3.2.5.Dataflows-4.1DataAccessControl'>4.1 Data Access Control</a>
+<ul class='toc-indentation'>
+<li><a href='#OVC3.2.5.Dataflows-4.1.1DeviceAuthentication'>4.1.1 Device Authentication</a></li>
+<li><a href='#OVC3.2.5.Dataflows-4.1.2SecureConnectivity'>4.1.2 Secure Connectivity</a></li>
+<li><a href='#OVC3.2.5.Dataflows-4.1.3UserAuthentication'>4.1.3 User Authentication</a></li>
+</ul>
+</li>
+<li><a href='#OVC3.2.5.Dataflows-4.2UsersAudit'>4.2 Users Audit</a></li>
+<li><a href='#OVC3.2.5.Dataflows-4.3SecurityServices'>4.3 Security Services</a></li>
+</ul>
+</li>
+<li><a href='#OVC3.2.5.Dataflows-5.DataResiliency'>5. Data Resiliency</a></li>
+<li><a href='#OVC3.2.5.Dataflows-6.DocumentDistribution'>6. Document Distribution</a></li>
+</ul>
+</div><h3 id="OVC3.2.5.Dataflows-1.Purpose">1. Purpose </h3><p>To document product data flows. Data is managed and stored in a Cloud service provided by BioT, who is a certified ISO13485 and IEC 62304. BioT clients enjoy Business Associate Agreement (BAA) agreements with BioT that offload their cyber security and privacy liability.</p><h3 id="OVC3.2.5.Dataflows-2.CollectedData">2. Collected Data</h3><h4 id="OVC3.2.5.Dataflows-2.1PersonalData">2.1 Personal Data</h4><ul><li><p>E-mail login</p></li><li><p>Password</p></li><li><p>Acceptance of informed consent</p></li><li><p>User ID (UID)</p></li></ul><h4 id="OVC3.2.5.Dataflows-2.2PhysiologicalParameters">2.2 Physiological Parameters</h4><ul><li><p>Pulse Rate</p></li><li><p>Oxygen Saturation</p></li><li><p>Systolic blood pressure</p></li><li><p>Diastolic blood pressure</p></li><li><p>Skin temperature</p></li></ul><h4 id="OVC3.2.5.Dataflows-2.3Metadata">2.3 Metadata</h4><ul><li><p>Time in hours:minutes:seconds</p></li><li><p>Date in day:month:year</p></li><li><p>Authenticated device - Device ID (DID)</p></li><li><p>Battery status</p></li></ul><h3 id="OVC3.2.5.Dataflows-3.DataFlows.">3. Data Flows.</h3><p> </p><span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-center" width="556" loading="lazy" src="attachments/3342653/134184961.jpg?width=556" data-image-src="attachments/3342653/134184961.jpg" data-height="601" data-width="556" data-unresolved-comment-count="0" data-linked-resource-id="134184961" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Data Flow-20231016-091328.jpg" data-base-url="https://onalabs.atlassian.net/wiki" data-linked-resource-content-type="image/jpeg" data-linked-resource-container-id="3342653" data-linked-resource-container-version="7" data-media-id="1d469475-6a86-4d83-9578-573ef326c986" data-media-type="file"></span><h3 id="OVC3.2.5.Dataflows-4.DataPrivacy.">4. Data Privacy.</h3><p>BioT is an AWS Advanced Technology Partner. As part of the mandatory requirements to be eligible for the Advanced status, BioT was required to qualify for the AWS Well-Architected Review, which is the deepest audit AWS conducts on its partners. The audit focuses on security best practices. BioT qualified for the review already at the first attempt with almost unprecedented recorded grades and compliments.</p><h4 id="OVC3.2.5.Dataflows-4.1DataAccessControl">4.1 Data Access Control</h4><p>Access to data resources is managed per user and per device, based on attribute-based ac<span class="inline-comment-marker" data-ref="cb832350-17b5-48e3-8d3d-e32700e6b7df">cess contr</span>ol. This security mechanism is used to prevent patient from creating other patients or accessing Protected Health Information (PHI) that they are not allowed to access. PHI information access is incorporated into the permission system and it is possible to define per user whether they are entitled to access PHI info and what info can they access.</p><p>The attributes to set the pertinent permissions are set up by linking the unique User ID (UID) with the unique Device ID (DID) and the credentials used to create the User. The UID is created automatically during User Sign Up and all the manufactured devices are already registered with a DID on the platform. During Sign Up on the APP, the User will be notified to introduce a DID Identification Code found inside the device packaging, linking in that manner the different attributes for access control.</p><h5 id="OVC3.2.5.Dataflows-4.1.1DeviceAuthentication">4.1.1 Device Authentication</h5><p>Devices are authenticated using X.509 certificates. The system performs both device authentication with the server, as well as server authentication with the device. Device keys are pre-loaded during the manufacturing process and are tied to a unique Device ID. In some cases devices can’t be loaded with a key during the manufacturing process. In these cases, the association is done ad-hoc in the field and requires a privileged logged in user to ensure reli<span class="inline-comment-marker" data-ref="a654b7c5-51d9-44fa-89b2-e269a7688e32">ance</span>.</p><h5 id="OVC3.2.5.Dataflows-4.1.2SecureConnectivity">4.1.2 Secure Connectivity</h5><p>All communication with the devices is encrypted over TLS. All communication to the IoT broker is done using MQTT, all other protocols are blocked and all ports are closed.</p><h5 id="OVC3.2.5.Dataflows-4.1.3UserAuthentication">4.1.3 User Authentication</h5><p>User authentication is done by means of JSON Web <em>Token</em> (JWT) technology. The tokens are obtained when logging in, and this information is saved in the application’s Secure Storage (flutter library that saves data encrypted). The response of the API call at the time of login returns the information in JSON format consisting of 3 parts:</p><ul><li><p>General ID information.</p></li><li><p>Access JWT information.</p></li><li><p>Refresh JWT information. </p></li></ul><h4 id="OVC3.2.5.Dataflows-4.2UsersAudit">4.2 Users Audit</h4><p>Every change made by a user is logged into an a<span class="inline-comment-marker" data-ref="a94f8d4b-4e7c-4d0c-a3cc-b41caaabca49">udit log.</span> Changes to PHI data are logged and can be traced back directly to the user that instigated the change.</p><h4 id="OVC3.2.5.Dataflows-4.3SecurityServices">4.3 Security Services</h4><p>All system data is managed per region and adheres to regional regulations. It is possible to define where data is stored (what region) and where it can be sent to, providing the owner of the system full control over sensitive issues like keeping medical data within the country they are working in.</p><p>BioT Multi Region automates routing of data from the device to the cloud in a way that complies with the privacy regulation set at the country of the owner of the device.</p><h3 id="OVC3.2.5.Dataflows-5.DataResiliency">5. Data Resiliency</h3><p>The system includes a high availability architecture based on AWS high availability zones that aims to provide continuation of service as well as data availability. The system high availability zones ensure that high availability instances are always running on different locations so a malfunction/problem in one location of AWS will not create an availability problem.</p><h3 id="OVC3.2.5.Dataflows-6.DocumentDistribution">6. Document Distribution</h3><div class="table-wrap"><table data-table-width="760" data-layout="default" data-local-id="d51499c6-f4f8-406e-8c0b-d1c031ce9c97" class="confluenceTable"><colgroup><col style="width: 380.0px;"/><col style="width: 380.0px;"/></colgroup><tbody><tr><td class="confluenceTd"><p> </p></td><td class="confluenceTd"><p>Action/ information</p></td></tr><tr><td class="confluenceTd"><p>This document is intended for an internal and (restricted) external audience.</p><p>The external audience may include the following organisations and regulators:</p><ul><li><p>Approved Bodies: conformity assessment bodies for the Medical Device Regulations.</p></li><li><p>Certification Body responsible for auditing and certifying the Quality Management System (QMS) to ISO 13485 </p></li><li><p>Third party contractors and suppliers involved in the manufacture</p></li></ul><p>All external distribution of this document must be approved prior to circulation.</p></td><td class="confluenceTd"><p>Information</p><p> </p></td></tr></tbody></table></div><p> </p>
+                    </div>
+
+                                        <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/3342653/3342662.png">image-20210726-105018.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/3342653/134184961.jpg">Data Flow-20231016-091328.jpg</a> (image/jpeg)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Jun 30, 2025 15:51</p>
+                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

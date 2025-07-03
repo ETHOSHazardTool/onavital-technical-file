@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ONALABS QMS : OV C3.2. Detailed Design</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">ONALABS QMS</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="OV-ONAVITAL-MDR-Product-Technical-File_3342337.html">OV ONAVITAL MDR Product Technical File</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="3342576.html">OV Part C: Design and Manufacturing Information</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            ONALABS QMS : OV C3.2. Detailed Design
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                            
+        
+    
+        
+    
+        
+        
+            Created by <span class='author'> Richard Bunney</span>, last modified by <span class='editor'> Jaime Punter</span> on May 20, 2025
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <p><span class="status-macro aui-lozenge aui-lozenge-visual-refresh aui-lozenge-error">COMPANY CONFIDENTIAL</span> <span class="status-macro aui-lozenge aui-lozenge-visual-refresh aui-lozenge-error">UNCONTROLLED IF PRINTED</span></p><p>Owner: Jaime Punter, CTO and Quality Representative</p><div class="ap-container" id="ap-com.automation-consultants.accloud.approvalmacro__ApprovalsStatusMacro2743792982278179992">
+
+  <div class="ap-content " id="embedded-com.automation-consultants.accloud.approvalmacro__ApprovalsStatusMacro2743792982278179992"></div>
+  <script nonce="528a568c4bd9f0fff5a3a25050ba0fb5" class="ap-iframe-body-script">
+  (function(){
+    var data = {
+    "addon_key":"com.automation-consultants.accloud.approvalmacro",
+    "uniqueKey":"com.automation-consultants.accloud.approvalmacro__ApprovalsStatusMacro2743792982278179992",
+    "key":"ApprovalsStatusMacro",
+     "moduleType":"dynamicContentMacros",      "moduleLocation":"content",         "cp":"/wiki",
+            "general":"",
+    "w":"",
+    "h":"",
+    "url":"https://ac-cloud.com/approvalmacro/macro/page-status/display?xdm_e=https%3A%2F%2Fonalabs.atlassian.net&xdm_c=channel-com.automation-consultants.accloud.approvalmacro__ApprovalsStatusMacro2743792982278179992&cp=%2Fwiki&xdm_deprecated_addon_key_do_not_use=com.automation-consultants.accloud.approvalmacro&lic=active&cv=1000.0.0-c58bc7260813&traceId=0a3e8f00e55491bdba7ada150ff9e048&spanId=afa87db56e5b67fc&traceSampled=0&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDU0OTY2Yjk0ZDdiOTAwNjkwMmRkMWUiLCJxc2giOiI5YzI1MTZiY2RiYTliZWI1YjJmNDg0MTdjOWNkNTAxZWFjN2Y0NmRiYzYyZTc5NDEyZmI2ZTRhMGQzZmM4NTczIiwiaXNzIjoiNzdjODA3YTAtMmNjNy0zZWVjLWEzNDItOWQzYzYyZjUwZWE0IiwiY29udGV4dCI6e30sImV4cCI6MTc1MTI5NTE2MCwiaWF0IjoxNzUxMjk0OTgwfQ.OUBJrOuNntr7MGR_nfgjsppoBWqn7dii3dJXjg-As8Y",
+     "contextJwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDU0OTY2Yjk0ZDdiOTAwNjkwMmRkMWUiLCJxc2giOiJjb250ZXh0LXFzaCIsImlzcyI6Ijc3YzgwN2EwLTJjYzctM2VlYy1hMzQyLTlkM2M2MmY1MGVhNCIsImNvbnRleHQiOnsibGljZW5zZSI6eyJhY3RpdmUiOnRydWV9LCJjb25mbHVlbmNlIjp7ImVkaXRvciI6eyJ2ZXJzaW9uIjoidjIifSwibWFjcm8iOnsib3V0cHV0VHlwZSI6Imh0bWxfZXhwb3J0IiwiaGFzaCI6IjA1MWU1YjU1LWE5ZTktNDA0NS1iMjk5LTg4YjQxM2EyMjc4YyIsImlkIjoiMDUxZTViNTUtYTllOS00MDQ1LWIyOTktODhiNDEzYTIyNzhjIn0sInRyYWNpbmciOnsidHJhY2VJZCI6IjBhM2U4ZjAwZTU1NDkxYmRiYTdhZGExNTBmZjllMDQ4Iiwic3BhbklkIjoiYWZhODdkYjU2ZTViNjdmYyIsInNhbXBsZWQiOiIwIn0sImNvbnRlbnQiOnsidHlwZSI6InBhZ2UiLCJ2ZXJzaW9uIjoiMiIsImlkIjoiMzM0MjYxMSJ9LCJzcGFjZSI6eyJrZXkiOiJPTkFMQUJTUU1TIiwiaWQiOiIyNzUyNTEyIn19LCJ1cmwiOnsiZGlzcGxheVVybCI6Imh0dHBzOlwvXC9vbmFsYWJzLmF0bGFzc2lhbi5uZXRcL3dpa2kifX0sImV4cCI6MTc1MTI5NTg4MCwiaWF0IjoxNzUxMjk0OTgwfQ.aI3pxtRmBqPcYVOX0C8RM6AUhca_WfHlVhSqrXmLBqs",    "structuredContext": "{\"license\":{\"active\":true},\"confluence\":{\"editor\":{\"version\":\"v2\"},\"macro\":{\"outputType\":\"html_export\",\"hash\":\"051e5b55-a9e9-4045-b299-88b413a2278c\",\"id\":\"051e5b55-a9e9-4045-b299-88b413a2278c\"},\"tracing\":{\"traceId\":\"0a3e8f00e55491bdba7ada150ff9e048\",\"spanId\":\"afa87db56e5b67fc\",\"sampled\":\"0\"},\"content\":{\"type\":\"page\",\"version\":\"2\",\"id\":\"3342611\"},\"space\":{\"key\":\"ONALABSQMS\",\"id\":\"2752512\"}},\"url\":{\"displayUrl\":\"https://onalabs.atlassian.net/wiki\"}}",
+    "contentClassifier":"content",
+    "productCtx":"{\"page.id\":\"3342611\",\"macro.hash\":\"051e5b55-a9e9-4045-b299-88b413a2278c\",\"space.key\":\"ONALABSQMS\",\"tracing.sampled\":\"0\",\"page.type\":\"page\",\"content.version\":\"2\",\"page.title\":\"OV C3.2. Detailed Design\",\"macro.localId\":\"dbd994a5-526f-4341-90b6-47c28beb0a7c\",\"macro.body\":\"\",\": = | RAW | = :\":null,\"space.id\":\"2752512\",\"macro.truncated\":\"false\",\"content.type\":\"page\",\"output.type\":\"html_export\",\"page.version\":\"2\",\"macro.fragmentLocalId\":\"\",\"content.id\":\"3342611\",\"tracing.traceId\":\"0a3e8f00e55491bdba7ada150ff9e048\",\"macro.id\":\"051e5b55-a9e9-4045-b299-88b413a2278c\",\"tracing.spanId\":\"afa87db56e5b67fc\",\"user.isExternalCollaborator\":\"false\",\"editor.version\":\"v2\"}",
+    "timeZone":"GB",
+    "origin":"https://ac-cloud.com",
+    "hostOrigin":"https://onalabs.atlassian.net",
+    "sandbox":"allow-downloads allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-scripts allow-same-origin allow-top-navigation-by-user-activation allow-storage-access-by-user-activation",    "pearApp":"true",        "apiMigrations": {
+        "gdpr": true
+    }
+}
+;
+    if(window.AP && window.AP.subCreate) {
+      window._AP.appendConnectAddon(data);
+    } else {
+      require(['ac/create'], function(create){
+        create.appendConnectAddon(data);
+      });
+    }
+
+    // For Confluence App Analytics. This code works in conjunction with CFE's ConnectSupport.js.
+    // Here, we add a listener to the initial HTML page that stores events if the ConnectSupport component
+    // has not mounted yet. In CFE, we process the missed event data and disable this initial listener.
+    const __MAX_EVENT_ARRAY_SIZE__ = 20;
+    const connectAppAnalytics = "ecosystem.confluence.connect.analytics";
+    window.connectHost && window.connectHost.onIframeEstablished((eventData) => {
+      if (!window.__CONFLUENCE_CONNECT_SUPPORT_LOADED__) {
+        let events = JSON.parse(window.localStorage.getItem(connectAppAnalytics)) || [];
+        if (events.length >= __MAX_EVENT_ARRAY_SIZE__) {
+          events.shift();
+        }
+        events.push(eventData);
+        window.localStorage.setItem(connectAppAnalytics, JSON.stringify(events));
+      }
+    });
+
+  }());
+</script>
+
+</div>
+<p /><p>Detailed design documentation is contained within child pages.</p><ul class='childpages-macro'><li><a href="OV-C3.2.1.-Hardware_46039041.html" data-linked-resource-id="46039041" data-linked-resource-version="27" data-linked-resource-type="page">OV C3.2.1. Hardware</a></li><li><a href="OV-C3.2.2.-Firmware_22151169.html" data-linked-resource-id="22151169" data-linked-resource-version="15" data-linked-resource-type="page">OV C3.2.2. Firmware</a></li><li><a href="22216705.html" data-linked-resource-id="22216705" data-linked-resource-version="23" data-linked-resource-type="page">OV C3.2.3. IOS / Android APP</a></li><li><a href="3342639.html" data-linked-resource-id="3342639" data-linked-resource-version="10" data-linked-resource-type="page">OV C3.2.4. User Journeys/ Process Flows</a></li><li><a href="OV-C3.2.5.-Data-flows_3342653.html" data-linked-resource-id="3342653" data-linked-resource-version="7" data-linked-resource-type="page">OV C3.2.5. Data flows</a></li><li><a href="OV-C3.2.6.-Baseline-Functionality_3342667.html" data-linked-resource-id="3342667" data-linked-resource-version="8" data-linked-resource-type="page">OV C3.2.6. Baseline Functionality</a></li><li><a href="OV-C3.2.7.-User-Roles_3342695.html" data-linked-resource-id="3342695" data-linked-resource-version="11" data-linked-resource-type="page">OV C3.2.7. User Roles</a></li><li><a href="OV-C3.2.8.-Cloud-Platform_136216577.html" data-linked-resource-id="136216577" data-linked-resource-version="7" data-linked-resource-type="page">OV C3.2.8. Cloud Platform</a></li><li><a href="OV-C3.2.9.-Plastic-case-and-fabric-straps_46268417.html" data-linked-resource-id="46268417" data-linked-resource-version="30" data-linked-resource-type="page">OV C3.2.9. Plastic case and fabric straps</a></li><li><a href="OV-C3.2.10.-Packaging_91455489.html" data-linked-resource-id="91455489" data-linked-resource-version="16" data-linked-resource-type="page">OV C3.2.10. Packaging</a></li></ul>
+                    </div>
+
+                                        <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/3342611/3342620.png">image-20210726-105018.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Jun 30, 2025 15:49</p>
+                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

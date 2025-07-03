@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ONALABS QMS : OV C3.4.1 Hardware Testing</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">ONALABS QMS</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="OV-ONAVITAL-MDR-Product-Technical-File_3342337.html">OV ONAVITAL MDR Product Technical File</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="3342576.html">OV Part C: Design and Manufacturing Information</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="OV-C3.4.-Product-Manufacturing-Definitions-and-Procedures_54132737.html">OV C3.4. Product Manufacturing Definitions and Procedures</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            ONALABS QMS : OV C3.4.1 Hardware Testing
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                            
+        
+    
+        
+    
+        
+        
+            Created by <span class='author'> Jaime Punter</span>, last modified on May 20, 2025
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <p><span class="status-macro aui-lozenge aui-lozenge-visual-refresh aui-lozenge-error">COMPANY CONFIDENTIAL</span> <span class="status-macro aui-lozenge aui-lozenge-visual-refresh aui-lozenge-error">UNCONTROLLED IF PRINTED</span></p><p>Owner: Jaime Punter, CTO and Quality Representative</p><div class="ap-container" id="ap-com.automation-consultants.accloud.approvalmacro__ApprovalsStatusMacro1801301769160799632">
+
+  <div class="ap-content " id="embedded-com.automation-consultants.accloud.approvalmacro__ApprovalsStatusMacro1801301769160799632"></div>
+  <script nonce="528a568c4bd9f0fff5a3a25050ba0fb5" class="ap-iframe-body-script">
+  (function(){
+    var data = {
+    "addon_key":"com.automation-consultants.accloud.approvalmacro",
+    "uniqueKey":"com.automation-consultants.accloud.approvalmacro__ApprovalsStatusMacro1801301769160799632",
+    "key":"ApprovalsStatusMacro",
+     "moduleType":"dynamicContentMacros",      "moduleLocation":"content",         "cp":"/wiki",
+            "general":"",
+    "w":"",
+    "h":"",
+    "url":"https://ac-cloud.com/approvalmacro/macro/page-status/display?xdm_e=https%3A%2F%2Fonalabs.atlassian.net&xdm_c=channel-com.automation-consultants.accloud.approvalmacro__ApprovalsStatusMacro1801301769160799632&cp=%2Fwiki&xdm_deprecated_addon_key_do_not_use=com.automation-consultants.accloud.approvalmacro&lic=active&cv=1000.0.0-c58bc7260813&traceId=1e67a06f58c1e19c0278eab088af7f17&spanId=a3a0ce279a93fe7f&traceSampled=0&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDU0OTY2Yjk0ZDdiOTAwNjkwMmRkMWUiLCJxc2giOiI1ODQ2M2VlOTljMWE1Y2U3N2QxZTkxZjE2NGVjNWM3YTc5NWQ0YmFhMDQ2ZDhjYTgyNWI1NWE2ODY2OTU1ODlmIiwiaXNzIjoiNzdjODA3YTAtMmNjNy0zZWVjLWEzNDItOWQzYzYyZjUwZWE0IiwiY29udGV4dCI6e30sImV4cCI6MTc1MTI5NTU1NywiaWF0IjoxNzUxMjk1Mzc3fQ.YjUtTLtpAT-3MvnOwuEObZxJ5xq_iqkgyEDlQYLQpsc",
+     "contextJwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDU0OTY2Yjk0ZDdiOTAwNjkwMmRkMWUiLCJxc2giOiJjb250ZXh0LXFzaCIsImlzcyI6Ijc3YzgwN2EwLTJjYzctM2VlYy1hMzQyLTlkM2M2MmY1MGVhNCIsImNvbnRleHQiOnsibGljZW5zZSI6eyJhY3RpdmUiOnRydWV9LCJjb25mbHVlbmNlIjp7ImVkaXRvciI6eyJ2ZXJzaW9uIjoidjIifSwibWFjcm8iOnsib3V0cHV0VHlwZSI6Imh0bWxfZXhwb3J0IiwiaGFzaCI6ImFmMTVlMjYzLWFkNzYtNDI1Yi05ZTRlLTdhNWIxNzk0OTRhYyIsImlkIjoiYWYxNWUyNjMtYWQ3Ni00MjViLTllNGUtN2E1YjE3OTQ5NGFjIn0sInRyYWNpbmciOnsidHJhY2VJZCI6IjFlNjdhMDZmNThjMWUxOWMwMjc4ZWFiMDg4YWY3ZjE3Iiwic3BhbklkIjoiYTNhMGNlMjc5YTkzZmU3ZiIsInNhbXBsZWQiOiIwIn0sImNvbnRlbnQiOnsidHlwZSI6InBhZ2UiLCJ2ZXJzaW9uIjoiMTAiLCJpZCI6Ijk0OTk0NDMzIn0sInNwYWNlIjp7ImtleSI6Ik9OQUxBQlNRTVMiLCJpZCI6IjI3NTI1MTIifX0sInVybCI6eyJkaXNwbGF5VXJsIjoiaHR0cHM6XC9cL29uYWxhYnMuYXRsYXNzaWFuLm5ldFwvd2lraSJ9fSwiZXhwIjoxNzUxMjk2Mjc3LCJpYXQiOjE3NTEyOTUzNzd9.1JJezUVZ4AYsjed3b6sop_sGngiaLJawkDVdaRLlf3M",    "structuredContext": "{\"license\":{\"active\":true},\"confluence\":{\"editor\":{\"version\":\"v2\"},\"macro\":{\"outputType\":\"html_export\",\"hash\":\"af15e263-ad76-425b-9e4e-7a5b179494ac\",\"id\":\"af15e263-ad76-425b-9e4e-7a5b179494ac\"},\"tracing\":{\"traceId\":\"1e67a06f58c1e19c0278eab088af7f17\",\"spanId\":\"a3a0ce279a93fe7f\",\"sampled\":\"0\"},\"content\":{\"type\":\"page\",\"version\":\"10\",\"id\":\"94994433\"},\"space\":{\"key\":\"ONALABSQMS\",\"id\":\"2752512\"}},\"url\":{\"displayUrl\":\"https://onalabs.atlassian.net/wiki\"}}",
+    "contentClassifier":"content",
+    "productCtx":"{\"page.id\":\"94994433\",\"macro.hash\":\"af15e263-ad76-425b-9e4e-7a5b179494ac\",\"space.key\":\"ONALABSQMS\",\"tracing.sampled\":\"0\",\"page.type\":\"page\",\"content.version\":\"10\",\"page.title\":\"OV C3.4.1 Hardware Testing\",\"macro.localId\":\"8e9dc659-7de8-4d4c-864b-0be2ce4bdcfc\",\"macro.body\":\"\",\": = | RAW | = :\":null,\"space.id\":\"2752512\",\"macro.truncated\":\"false\",\"content.type\":\"page\",\"output.type\":\"html_export\",\"page.version\":\"10\",\"macro.fragmentLocalId\":\"\",\"content.id\":\"94994433\",\"tracing.traceId\":\"1e67a06f58c1e19c0278eab088af7f17\",\"macro.id\":\"af15e263-ad76-425b-9e4e-7a5b179494ac\",\"tracing.spanId\":\"a3a0ce279a93fe7f\",\"user.isExternalCollaborator\":\"false\",\"editor.version\":\"v2\"}",
+    "timeZone":"GB",
+    "origin":"https://ac-cloud.com",
+    "hostOrigin":"https://onalabs.atlassian.net",
+    "sandbox":"allow-downloads allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-scripts allow-same-origin allow-top-navigation-by-user-activation allow-storage-access-by-user-activation",    "pearApp":"true",        "apiMigrations": {
+        "gdpr": true
+    }
+}
+;
+    if(window.AP && window.AP.subCreate) {
+      window._AP.appendConnectAddon(data);
+    } else {
+      require(['ac/create'], function(create){
+        create.appendConnectAddon(data);
+      });
+    }
+
+    // For Confluence App Analytics. This code works in conjunction with CFE's ConnectSupport.js.
+    // Here, we add a listener to the initial HTML page that stores events if the ConnectSupport component
+    // has not mounted yet. In CFE, we process the missed event data and disable this initial listener.
+    const __MAX_EVENT_ARRAY_SIZE__ = 20;
+    const connectAppAnalytics = "ecosystem.confluence.connect.analytics";
+    window.connectHost && window.connectHost.onIframeEstablished((eventData) => {
+      if (!window.__CONFLUENCE_CONNECT_SUPPORT_LOADED__) {
+        let events = JSON.parse(window.localStorage.getItem(connectAppAnalytics)) || [];
+        if (events.length >= __MAX_EVENT_ARRAY_SIZE__) {
+          events.shift();
+        }
+        events.push(eventData);
+        window.localStorage.setItem(connectAppAnalytics, JSON.stringify(events));
+      }
+    });
+
+  }());
+</script>
+
+</div>
+<p /><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1751295377009 {padding: 0px;}
+div.rbtoc1751295377009 ul {list-style: none;margin-left: 0px;}
+div.rbtoc1751295377009 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1751295377009'>
+<ul class='toc-indentation'>
+<li><a href='#OVC3.4.1HardwareTesting-1.Purpose'>1. Purpose</a></li>
+<li><a href='#OVC3.4.1HardwareTesting-2.Protocol'>2. Protocol</a></li>
+<li><a href='#OVC3.4.1HardwareTesting-3.DocumentDistribution'>3. Document Distribution</a></li>
+</ul>
+</div><h3 id="OVC3.4.1HardwareTesting-1.Purpose">1. Purpose</h3><p>To detail final hardware (HW) testing protocol.</p><h3 id="OVC3.4.1HardwareTesting-2.Protocol">2. Protocol</h3><p><a class="external-link" href="https://onalabs.sharepoint.com/:f:/s/Products/Esh15ehS6KtPuVr8QV1ov4oBh42MEXVdA6mttcDVVkVeCg?e=PQMT0I" rel="nofollow">Electronics testing</a></p><h3 id="OVC3.4.1HardwareTesting-3.DocumentDistribution">3. Document Distribution</h3><div class="table-wrap"><table data-table-width="760" data-layout="default" data-local-id="d51499c6-f4f8-406e-8c0b-d1c031ce9c97" class="confluenceTable"><colgroup><col style="width: 380.0px;"/><col style="width: 380.0px;"/></colgroup><tbody><tr><td class="confluenceTd"><p> </p></td><td class="confluenceTd"><p>Action/ information</p></td></tr><tr><td class="confluenceTd"><p>This document is intended for an internal and (restricted) external audience.</p><p>The external audience may include the following organisations and regulators:</p><ul><li><p>Approved Bodies: conformity assessment bodies for the Medical Device Regulations.</p></li><li><p>Certification Body responsible for auditing and certifying the Quality Management System (QMS) to ISO 13485 </p></li><li><p>Third party contractors and suppliers involved in the manufacture</p></li></ul><p>All external distribution of this document must be approved prior to circulation.</p></td><td class="confluenceTd"><p>Information</p><p> </p></td></tr></tbody></table></div><p> </p>
+                    </div>
+
+                                        <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/94994433/95158273.docx">11072023 OV Final Product Testing DRAFT_v2.docx</a> (application/vnd.openxmlformats-officedocument.wordprocessingml.document)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/94994433/95485987.docx">11072023 OV Final Product Testing DRAFT_v3.docx</a> (application/vnd.openxmlformats-officedocument.wordprocessingml.document)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/94994433/224559187.docx">Hardware testing ONAVITALv2.0.1.docx</a> (application/vnd.openxmlformats-officedocument.wordprocessingml.document)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/94994433/200507426.docx">Hardware testing ONAVITALv2.0.1.docx</a> (application/vnd.openxmlformats-officedocument.wordprocessingml.document)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/94994433/439746595.png">image-20240711-091035.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Jun 30, 2025 15:56</p>
+                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

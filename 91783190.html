@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ONALABS QMS : OV E5.4. Failure Mode Effect &amp; Analysis</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">ONALABS QMS</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="OV-ONAVITAL-MDR-Product-Technical-File_3342337.html">OV ONAVITAL MDR Product Technical File</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="3342756.html">OV Part E: Risk Management Files</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            ONALABS QMS : OV E5.4. Failure Mode Effect &amp; Analysis
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                            
+        
+    
+        
+    
+        
+        
+            Created by <span class='author'> Richard Bunney</span>, last modified by <span class='editor'> Jaime Punter</span> on May 20, 2025
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <p><span class="status-macro aui-lozenge aui-lozenge-visual-refresh aui-lozenge-error">COMPANY CONFIDENTIAL</span> <span class="status-macro aui-lozenge aui-lozenge-visual-refresh aui-lozenge-error">UNCONTROLLED IF PRINTED</span></p><p>Owner: Jaime Punter, CTO and Quality Representative</p><p> </p><div class="ap-container" id="ap-com.automation-consultants.accloud.approvalmacro__ApprovalsStatusMacro8123135056663152561">
+
+  <div class="ap-content " id="embedded-com.automation-consultants.accloud.approvalmacro__ApprovalsStatusMacro8123135056663152561"></div>
+  <script nonce="528a568c4bd9f0fff5a3a25050ba0fb5" class="ap-iframe-body-script">
+  (function(){
+    var data = {
+    "addon_key":"com.automation-consultants.accloud.approvalmacro",
+    "uniqueKey":"com.automation-consultants.accloud.approvalmacro__ApprovalsStatusMacro8123135056663152561",
+    "key":"ApprovalsStatusMacro",
+     "moduleType":"dynamicContentMacros",      "moduleLocation":"content",         "cp":"/wiki",
+            "general":"",
+    "w":"",
+    "h":"",
+    "url":"https://ac-cloud.com/approvalmacro/macro/page-status/display?xdm_e=https%3A%2F%2Fonalabs.atlassian.net&xdm_c=channel-com.automation-consultants.accloud.approvalmacro__ApprovalsStatusMacro8123135056663152561&cp=%2Fwiki&xdm_deprecated_addon_key_do_not_use=com.automation-consultants.accloud.approvalmacro&lic=active&cv=1000.0.0-c58bc7260813&traceId=c803a410e54cfaaace93cb496053b9d2&spanId=30a7fc5a2ddcf52a&traceSampled=0&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDU0OTY2Yjk0ZDdiOTAwNjkwMmRkMWUiLCJxc2giOiIyYzAzMmY4NDVlZmRmZDEwYjEzMTY0N2I1ZDc2ZGQ2ZTAzODc0ZjljY2I5MzczZjRkMWExYTY3NjI3MGQ0YjQwIiwiaXNzIjoiNzdjODA3YTAtMmNjNy0zZWVjLWEzNDItOWQzYzYyZjUwZWE0IiwiY29udGV4dCI6e30sImV4cCI6MTc1MTI5NTU3MywiaWF0IjoxNzUxMjk1MzkzfQ.OejVEi1CsIgMnivJnR0sQbZXUC3J1eWS5tGZso2-zI4",
+     "contextJwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDU0OTY2Yjk0ZDdiOTAwNjkwMmRkMWUiLCJxc2giOiJjb250ZXh0LXFzaCIsImlzcyI6Ijc3YzgwN2EwLTJjYzctM2VlYy1hMzQyLTlkM2M2MmY1MGVhNCIsImNvbnRleHQiOnsibGljZW5zZSI6eyJhY3RpdmUiOnRydWV9LCJjb25mbHVlbmNlIjp7ImVkaXRvciI6eyJ2ZXJzaW9uIjoidjIifSwibWFjcm8iOnsib3V0cHV0VHlwZSI6Imh0bWxfZXhwb3J0IiwiaGFzaCI6IjA2NzkwN2Q1LWJiYWQtNGE2OC1hYWFjLTIzMzI3MDViNjZkNiIsImlkIjoiMDY3OTA3ZDUtYmJhZC00YTY4LWFhYWMtMjMzMjcwNWI2NmQ2In0sInRyYWNpbmciOnsidHJhY2VJZCI6ImM4MDNhNDEwZTU0Y2ZhYWFjZTkzY2I0OTYwNTNiOWQyIiwic3BhbklkIjoiMzBhN2ZjNWEyZGRjZjUyYSIsInNhbXBsZWQiOiIwIn0sImNvbnRlbnQiOnsidHlwZSI6InBhZ2UiLCJ2ZXJzaW9uIjoiNyIsImlkIjoiOTE3ODMxOTAifSwic3BhY2UiOnsia2V5IjoiT05BTEFCU1FNUyIsImlkIjoiMjc1MjUxMiJ9fSwidXJsIjp7ImRpc3BsYXlVcmwiOiJodHRwczpcL1wvb25hbGFicy5hdGxhc3NpYW4ubmV0XC93aWtpIn19LCJleHAiOjE3NTEyOTYyOTMsImlhdCI6MTc1MTI5NTM5M30.FE2eTczjeW444XVBbeyXPvH7NZrfD0BzMoAhjBHaZ7k",    "structuredContext": "{\"license\":{\"active\":true},\"confluence\":{\"editor\":{\"version\":\"v2\"},\"macro\":{\"outputType\":\"html_export\",\"hash\":\"067907d5-bbad-4a68-aaac-2332705b66d6\",\"id\":\"067907d5-bbad-4a68-aaac-2332705b66d6\"},\"tracing\":{\"traceId\":\"c803a410e54cfaaace93cb496053b9d2\",\"spanId\":\"30a7fc5a2ddcf52a\",\"sampled\":\"0\"},\"content\":{\"type\":\"page\",\"version\":\"7\",\"id\":\"91783190\"},\"space\":{\"key\":\"ONALABSQMS\",\"id\":\"2752512\"}},\"url\":{\"displayUrl\":\"https://onalabs.atlassian.net/wiki\"}}",
+    "contentClassifier":"content",
+    "productCtx":"{\"page.id\":\"91783190\",\"macro.hash\":\"067907d5-bbad-4a68-aaac-2332705b66d6\",\"space.key\":\"ONALABSQMS\",\"tracing.sampled\":\"0\",\"page.type\":\"page\",\"content.version\":\"7\",\"page.title\":\"OV E5.4. Failure Mode Effect & Analysis\",\"macro.localId\":\"9104c142-70c9-49c2-a153-adc1c3c8165b\",\"macro.body\":\"\",\": = | RAW | = :\":null,\"space.id\":\"2752512\",\"macro.truncated\":\"false\",\"content.type\":\"page\",\"output.type\":\"html_export\",\"page.version\":\"7\",\"macro.fragmentLocalId\":\"\",\"content.id\":\"91783190\",\"tracing.traceId\":\"c803a410e54cfaaace93cb496053b9d2\",\"macro.id\":\"067907d5-bbad-4a68-aaac-2332705b66d6\",\"tracing.spanId\":\"30a7fc5a2ddcf52a\",\"user.isExternalCollaborator\":\"false\",\"editor.version\":\"v2\"}",
+    "timeZone":"GB",
+    "origin":"https://ac-cloud.com",
+    "hostOrigin":"https://onalabs.atlassian.net",
+    "sandbox":"allow-downloads allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-scripts allow-same-origin allow-top-navigation-by-user-activation allow-storage-access-by-user-activation",    "pearApp":"true",        "apiMigrations": {
+        "gdpr": true
+    }
+}
+;
+    if(window.AP && window.AP.subCreate) {
+      window._AP.appendConnectAddon(data);
+    } else {
+      require(['ac/create'], function(create){
+        create.appendConnectAddon(data);
+      });
+    }
+
+    // For Confluence App Analytics. This code works in conjunction with CFE's ConnectSupport.js.
+    // Here, we add a listener to the initial HTML page that stores events if the ConnectSupport component
+    // has not mounted yet. In CFE, we process the missed event data and disable this initial listener.
+    const __MAX_EVENT_ARRAY_SIZE__ = 20;
+    const connectAppAnalytics = "ecosystem.confluence.connect.analytics";
+    window.connectHost && window.connectHost.onIframeEstablished((eventData) => {
+      if (!window.__CONFLUENCE_CONNECT_SUPPORT_LOADED__) {
+        let events = JSON.parse(window.localStorage.getItem(connectAppAnalytics)) || [];
+        if (events.length >= __MAX_EVENT_ARRAY_SIZE__) {
+          events.shift();
+        }
+        events.push(eventData);
+        window.localStorage.setItem(connectAppAnalytics, JSON.stringify(events));
+      }
+    });
+
+  }());
+</script>
+
+</div>
+<style type='text/css'>/*<![CDATA[*/
+div.rbtoc1751295393847 {padding: 0px;}
+div.rbtoc1751295393847 ul {list-style: disc;margin-left: 0px;}
+div.rbtoc1751295393847 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1751295393847'>
+<ul class='toc-indentation'>
+<li><a href='#OVE5.4.FailureModeEffect&amp;Analysis-1.Purpose'>1. Purpose</a></li>
+<li><a href='#OVE5.4.FailureModeEffect&amp;Analysis-2.Scope'>2. Scope</a></li>
+<li><a href='#OVE5.4.FailureModeEffect&amp;Analysis-3.FMEA'>3. FMEA</a></li>
+<li><a href='#OVE5.4.FailureModeEffect&amp;Analysis-4.DocumentDistribution'>4. Document Distribution</a></li>
+</ul>
+</div><h3 id="OVE5.4.FailureModeEffect&amp;Analysis-1.Purpose">1. Purpose </h3><p>The failure mode effects analysis (FMEA) documents the failure analysis for the device. The FMEA is an essential activity to control/reduce residual risk from intolerable to acceptable based upon previously defined risk tolerance levels and forms part of the ONAVITAL risk management file.</p><h3 id="OVE5.4.FailureModeEffect&amp;Analysis-2.Scope">2. Scope</h3><p>The FMEA is constructed in alignment with and applies the good practice principles of ISO14971:2012/2019.</p><h3 id="OVE5.4.FailureModeEffect&amp;Analysis-3.FMEA">3. FMEA</h3><p class="media-group"><span class="confluence-embedded-file-wrapper"><a class="confluence-embedded-file" href="attachments/91783190/97452033.xlsx" data-nice-type="Microsoft Excel Spreadsheet" data-file-src="/wiki/download/attachments/91783190/OV%2B%20FMEA%20v2.xlsx?version=1&amp;modificationDate=1689330132969&amp;cacheVersion=1&amp;api=v2" data-linked-resource-id="97452033" data-linked-resource-type="attachment" data-linked-resource-container-id="91783190" data-linked-resource-default-alias="OV+ FMEA v2.xlsx" data-mime-type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" data-has-thumbnail="true" data-linked-resource-version="1" data-media-id="e6393ebb-9189-4883-b63b-124998134303" data-media-type="file"><img src="attachments/thumbnails/91783190/97452033" height="250"/></a></span></p><h3 id="OVE5.4.FailureModeEffect&amp;Analysis-4.DocumentDistribution">4. Document Distribution</h3><div class="table-wrap"><table data-table-width="760" data-layout="default" data-local-id="d51499c6-f4f8-406e-8c0b-d1c031ce9c97" class="confluenceTable"><colgroup><col style="width: 380.0px;"/><col style="width: 380.0px;"/></colgroup><tbody><tr><td class="confluenceTd"><p> </p></td><td class="confluenceTd"><p>Action/ information</p></td></tr><tr><td class="confluenceTd"><p>This document is intended for an internal and (restricted) external audience.</p><p>The external audience may include the following organisations and regulators:</p><ul><li><p>Approved Bodies: conformity assessment bodies for the Medical Device Regulations.</p></li><li><p>Certification Body responsible for auditing and certifying the Quality Management System (QMS) to ISO 13485 </p></li><li><p>Third party contractors and suppliers involved in the manufacture</p></li></ul><p>All external distribution of this document must be approved prior to circulation.</p></td><td class="confluenceTd"><p>Information</p><p> </p></td></tr></tbody></table></div><p> </p>
+                    </div>
+
+                                        <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/91783190/91783201.png">image-20210726-105018.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/91783190/91848870.xlsx">OV+ FMEA v1.xlsx</a> (application/vnd.openxmlformats-officedocument.spreadsheetml.sheet)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/91783190/97452033.xlsx">OV+ FMEA v2.xlsx</a> (application/vnd.openxmlformats-officedocument.spreadsheetml.sheet)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Jun 30, 2025 15:56</p>
+                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

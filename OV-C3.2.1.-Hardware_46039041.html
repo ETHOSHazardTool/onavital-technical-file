@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ONALABS QMS : OV C3.2.1. Hardware</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">ONALABS QMS</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="OV-ONAVITAL-MDR-Product-Technical-File_3342337.html">OV ONAVITAL MDR Product Technical File</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="3342576.html">OV Part C: Design and Manufacturing Information</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="OV-C3.2.-Detailed-Design_3342611.html">OV C3.2. Detailed Design</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            ONALABS QMS : OV C3.2.1. Hardware
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                            
+        
+    
+        
+    
+        
+        
+            Created by <span class='author'> Jaime Punter</span>, last modified on Jun 06, 2025
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <p><span class="status-macro aui-lozenge aui-lozenge-visual-refresh aui-lozenge-error">COMPANY CONFIDENTIAL</span> <span class="status-macro aui-lozenge aui-lozenge-visual-refresh aui-lozenge-error">UNCONTROLLED IF PRINTED</span></p><p>Owner: Jaime Punter, CTO and Quality Representative</p><div class="ap-container" id="ap-com.automation-consultants.accloud.approvalmacro__ApprovalsStatusMacro5885128351497304359">
+
+  <div class="ap-content " id="embedded-com.automation-consultants.accloud.approvalmacro__ApprovalsStatusMacro5885128351497304359"></div>
+  <script nonce="528a568c4bd9f0fff5a3a25050ba0fb5" class="ap-iframe-body-script">
+  (function(){
+    var data = {
+    "addon_key":"com.automation-consultants.accloud.approvalmacro",
+    "uniqueKey":"com.automation-consultants.accloud.approvalmacro__ApprovalsStatusMacro5885128351497304359",
+    "key":"ApprovalsStatusMacro",
+     "moduleType":"dynamicContentMacros",      "moduleLocation":"content",         "cp":"/wiki",
+            "general":"",
+    "w":"",
+    "h":"",
+    "url":"https://ac-cloud.com/approvalmacro/macro/page-status/display?xdm_e=https%3A%2F%2Fonalabs.atlassian.net&xdm_c=channel-com.automation-consultants.accloud.approvalmacro__ApprovalsStatusMacro5885128351497304359&cp=%2Fwiki&xdm_deprecated_addon_key_do_not_use=com.automation-consultants.accloud.approvalmacro&lic=active&cv=1000.0.0-c58bc7260813&traceId=3d495c008a567cd0808f94e1477f0e64&spanId=610977abc2884676&traceSampled=0&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDU0OTY2Yjk0ZDdiOTAwNjkwMmRkMWUiLCJxc2giOiI3OTkxZmU1NWEzYjdiMjZkOGNjNTFjNmQxZjJhN2EzNWIxYTlkNmI0ODZiZDJiYzgxMjI0MWY2M2Y0ZTUxZTQxIiwiaXNzIjoiNzdjODA3YTAtMmNjNy0zZWVjLWEzNDItOWQzYzYyZjUwZWE0IiwiY29udGV4dCI6e30sImV4cCI6MTc1MTI5NTE2MCwiaWF0IjoxNzUxMjk0OTgwfQ.t8Gys2n3UjchwENYj_JhuHQ73Wi_dMleQPbKxoHxpOM",
+     "contextJwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDU0OTY2Yjk0ZDdiOTAwNjkwMmRkMWUiLCJxc2giOiJjb250ZXh0LXFzaCIsImlzcyI6Ijc3YzgwN2EwLTJjYzctM2VlYy1hMzQyLTlkM2M2MmY1MGVhNCIsImNvbnRleHQiOnsibGljZW5zZSI6eyJhY3RpdmUiOnRydWV9LCJjb25mbHVlbmNlIjp7ImVkaXRvciI6eyJ2ZXJzaW9uIjoidjIifSwibWFjcm8iOnsib3V0cHV0VHlwZSI6Imh0bWxfZXhwb3J0IiwiaGFzaCI6Ijc3ZWMxYjYyLTRkOWMtNDllMS1iMWEyLWUyZWNkNmEyMzQ3YyIsImlkIjoiNzdlYzFiNjItNGQ5Yy00OWUxLWIxYTItZTJlY2Q2YTIzNDdjIn0sInRyYWNpbmciOnsidHJhY2VJZCI6IjNkNDk1YzAwOGE1NjdjZDA4MDhmOTRlMTQ3N2YwZTY0Iiwic3BhbklkIjoiNjEwOTc3YWJjMjg4NDY3NiIsInNhbXBsZWQiOiIwIn0sImNvbnRlbnQiOnsidHlwZSI6InBhZ2UiLCJ2ZXJzaW9uIjoiMjciLCJpZCI6IjQ2MDM5MDQxIn0sInNwYWNlIjp7ImtleSI6Ik9OQUxBQlNRTVMiLCJpZCI6IjI3NTI1MTIifX0sInVybCI6eyJkaXNwbGF5VXJsIjoiaHR0cHM6XC9cL29uYWxhYnMuYXRsYXNzaWFuLm5ldFwvd2lraSJ9fSwiZXhwIjoxNzUxMjk1ODgwLCJpYXQiOjE3NTEyOTQ5ODB9.2wKL8ehL2pr-fwmCcQjO8e9fyi2QpGMJS5GZwQxkxmc",    "structuredContext": "{\"license\":{\"active\":true},\"confluence\":{\"editor\":{\"version\":\"v2\"},\"macro\":{\"outputType\":\"html_export\",\"hash\":\"77ec1b62-4d9c-49e1-b1a2-e2ecd6a2347c\",\"id\":\"77ec1b62-4d9c-49e1-b1a2-e2ecd6a2347c\"},\"tracing\":{\"traceId\":\"3d495c008a567cd0808f94e1477f0e64\",\"spanId\":\"610977abc2884676\",\"sampled\":\"0\"},\"content\":{\"type\":\"page\",\"version\":\"27\",\"id\":\"46039041\"},\"space\":{\"key\":\"ONALABSQMS\",\"id\":\"2752512\"}},\"url\":{\"displayUrl\":\"https://onalabs.atlassian.net/wiki\"}}",
+    "contentClassifier":"content",
+    "productCtx":"{\"page.id\":\"46039041\",\"macro.hash\":\"77ec1b62-4d9c-49e1-b1a2-e2ecd6a2347c\",\"space.key\":\"ONALABSQMS\",\"tracing.sampled\":\"0\",\"page.type\":\"page\",\"content.version\":\"27\",\"page.title\":\"OV C3.2.1. Hardware\",\"macro.localId\":\"917c52a4-03f7-4973-a1de-18500cdf9b40\",\"macro.body\":\"\",\": = | RAW | = :\":null,\"space.id\":\"2752512\",\"macro.truncated\":\"false\",\"content.type\":\"page\",\"output.type\":\"html_export\",\"page.version\":\"27\",\"macro.fragmentLocalId\":\"\",\"content.id\":\"46039041\",\"tracing.traceId\":\"3d495c008a567cd0808f94e1477f0e64\",\"macro.id\":\"77ec1b62-4d9c-49e1-b1a2-e2ecd6a2347c\",\"tracing.spanId\":\"610977abc2884676\",\"user.isExternalCollaborator\":\"false\",\"editor.version\":\"v2\"}",
+    "timeZone":"GB",
+    "origin":"https://ac-cloud.com",
+    "hostOrigin":"https://onalabs.atlassian.net",
+    "sandbox":"allow-downloads allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-scripts allow-same-origin allow-top-navigation-by-user-activation allow-storage-access-by-user-activation",    "pearApp":"true",        "apiMigrations": {
+        "gdpr": true
+    }
+}
+;
+    if(window.AP && window.AP.subCreate) {
+      window._AP.appendConnectAddon(data);
+    } else {
+      require(['ac/create'], function(create){
+        create.appendConnectAddon(data);
+      });
+    }
+
+    // For Confluence App Analytics. This code works in conjunction with CFE's ConnectSupport.js.
+    // Here, we add a listener to the initial HTML page that stores events if the ConnectSupport component
+    // has not mounted yet. In CFE, we process the missed event data and disable this initial listener.
+    const __MAX_EVENT_ARRAY_SIZE__ = 20;
+    const connectAppAnalytics = "ecosystem.confluence.connect.analytics";
+    window.connectHost && window.connectHost.onIframeEstablished((eventData) => {
+      if (!window.__CONFLUENCE_CONNECT_SUPPORT_LOADED__) {
+        let events = JSON.parse(window.localStorage.getItem(connectAppAnalytics)) || [];
+        if (events.length >= __MAX_EVENT_ARRAY_SIZE__) {
+          events.shift();
+        }
+        events.push(eventData);
+        window.localStorage.setItem(connectAppAnalytics, JSON.stringify(events));
+      }
+    });
+
+  }());
+</script>
+
+</div>
+<p /><style type='text/css'>/*<![CDATA[*/
+div.rbtoc1751294980412 {padding: 0px;}
+div.rbtoc1751294980412 ul {list-style: disc;margin-left: 0px;}
+div.rbtoc1751294980412 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style><div class='toc-macro rbtoc1751294980412'>
+<ul class='toc-indentation'>
+<li><a href='#OVC3.2.1.Hardware-1.Purpose'>1. Purpose</a></li>
+<li><a href='#OVC3.2.1.Hardware-2.HardwareVersion2'>2. Hardware Version 2</a>
+<ul class='toc-indentation'>
+<li><a href='#OVC3.2.1.Hardware-2.1HardwareTechnicalFiles'>2.1 Hardware Technical Files</a></li>
+<li><a href='#OVC3.2.1.Hardware-2.2DesignReportandValidation'>2.2 Design Report and Validation</a></li>
+</ul>
+</li>
+<li><a href='#OVC3.2.1.Hardware-3.HardwareVersion3'>3. Hardware Version 3</a>
+<ul class='toc-indentation'>
+<li><a href='#OVC3.2.1.Hardware-3.1HardwareTechnicalFiles'>3.1 Hardware Technical Files</a></li>
+<li><a href='#OVC3.2.1.Hardware-3.2DesignReportandValidation'>3.2 Design Report and Validation</a></li>
+</ul>
+</li>
+<li><a href='#OVC3.2.1.Hardware-4.ExpectedLifeTime'>4. Expected Life Time</a></li>
+<li><a href='#OVC3.2.1.Hardware-5.DocumentDistribution'>5. Document Distribution</a></li>
+</ul>
+</div><h3 id="OVC3.2.1.Hardware-1.Purpose">1. Purpose</h3><p>To detail hardware technical files.</p><h3 id="OVC3.2.1.Hardware-2.HardwareVersion2">2. Hardware Version 2</h3><h5 id="OVC3.2.1.Hardware-2.1HardwareTechnicalFiles">2.1 Hardware Technical Files</h5><p><a class="external-link" data-card-appearance="inline" href="https://github.com/OnalabsInnoHub/onavital-pcb" rel="nofollow">https://github.com/OnalabsInnoHub/onavital-pcb</a> </p><h5 id="OVC3.2.1.Hardware-2.2DesignReportandValidation">2.2 Design Report and Validation</h5><p><a class="external-link" href="https://onalabs.sharepoint.com/:f:/s/Products/EsCA6pPp-QFGgXxvnTfk9OUBkFGhgmh3xkWftbuho8s1mg?e=wBpgtn" rel="nofollow">v2</a></p><h3 id="OVC3.2.1.Hardware-3.HardwareVersion3">3. Hardware Version 3</h3><h5 id="OVC3.2.1.Hardware-3.1HardwareTechnicalFiles">3.1 Hardware Technical Files</h5><p><a class="external-link" data-card-appearance="inline" href="https://github.com/OnalabsInnoHub/onavital-pcb/tree/vbat" rel="nofollow">https://github.com/OnalabsInnoHub/onavital-pcb/tree/vbat</a> </p><h5 id="OVC3.2.1.Hardware-3.2DesignReportandValidation">3.2 Design Report and Validation</h5><p><a class="external-link" href="https://onalabs.sharepoint.com/:f:/s/Products/Eiazl6jV8VZIsqPemo-JhEcBz249fK5TrnMNkk1zPuUk3A?e=QiO7o0" rel="nofollow">v3</a></p><h3 id="OVC3.2.1.Hardware-4.ExpectedLifeTime">4. Expected Life Time</h3><p>Hardware Service life, and thus, Product Service life is determined by the Lithium Polymer battery Expected Cycle Life of 500 Cycles. </p><p>To avoid any risks, and considering an expected charge frequency of a full charge every 3 days, Service life is considered to be 4 years.</p><p /><p class="media-group"><span class="confluence-embedded-file-wrapper"><a class="confluence-embedded-file" href="attachments/46039041/136708098.pdf" data-nice-type="PDF Document" data-file-src="/wiki/download/attachments/46039041/LiPo_Battery_LP451528_3.7V_150mAh.pdf?version=2&amp;modificationDate=1697624145131&amp;cacheVersion=1&amp;api=v2" data-linked-resource-id="136708098" data-linked-resource-type="attachment" data-linked-resource-container-id="46039041" data-linked-resource-default-alias="LiPo_Battery_LP451528_3.7V_150mAh.pdf" data-mime-type="application/pdf" data-has-thumbnail="true" data-linked-resource-version="2" data-media-id="20216029-31a5-438c-9bc2-41abf5e395ce" data-media-type="file"><img src="attachments/thumbnails/46039041/136708098" height="250"/></a></span></p><p /><h3 id="OVC3.2.1.Hardware-5.DocumentDistribution">5. Document Distribution</h3><div class="table-wrap"><table data-table-width="760" data-layout="default" data-local-id="d51499c6-f4f8-406e-8c0b-d1c031ce9c97" class="confluenceTable"><colgroup><col style="width: 380.0px;"/><col style="width: 380.0px;"/></colgroup><tbody><tr><td class="confluenceTd"><p> </p></td><td class="confluenceTd"><p>Action/ information</p></td></tr><tr><td class="confluenceTd"><p>This document is intended for an internal and (restricted) external audience.</p><p>The external audience may include the following organisations and regulators:</p><ul><li><p>Approved Bodies: conformity assessment bodies for the Medical Device Regulations.</p></li><li><p>Certification Body responsible for auditing and certifying the Quality Management System (QMS) to ISO 13485 </p></li><li><p>Third party contractors and suppliers involved in the manufacture</p></li></ul><p>All external distribution of this document must be approved prior to circulation.</p></td><td class="confluenceTd"><p>Information</p><p> </p></td></tr></tbody></table></div><p> </p>
+                    </div>
+
+                                        <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/46039041/46039054.png">image-20210726-105018.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/46039041/48037889.rar">Gerbers.rar</a> (binary/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/46039041/47317001.rar">ONAVITAL_V1.rar</a> (binary/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/46039041/47317007.docx">06022023_ONAVITAL_PCB_TESTING_ONAPRFINAL_v1.docx</a> (application/vnd.openxmlformats-officedocument.wordprocessingml.document)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/46039041/47841297.pptx">Testing PCB ONAVITAL.pptx</a> (application/vnd.openxmlformats-officedocument.presentationml.presentation)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/46039041/90767384.pdf">ONA M10v2.0.0 HW Schematic.pdf</a> (application/pdf)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/46039041/90701847.rar">M10 v2.0.0 HW.rar</a> (binary/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/46039041/90832940.rar">M10 v2.0.0 HW.rar</a> (binary/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/46039041/136642562.pdf">LiPo_Battery_LP451528_3.7V_150mAh.pdf</a> (application/pdf)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/46039041/136708098.pdf">LiPo_Battery_LP451528_3.7V_150mAh.pdf</a> (application/pdf)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/46039041/147292161.pdf">OV v2.0.1 HW Schematic.pdf</a> (application/pdf)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/46039041/147324929.pdf">OV v2.0.0 HW Schematic.pdf</a> (application/pdf)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/46039041/151879681.docx">ONAVITAL v2.0.1 report.docx</a> (application/vnd.openxmlformats-officedocument.wordprocessingml.document)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/46039041/155123728.pdf">AssemblyDrawingONAVITAL_TOP.pdf</a> (application/pdf)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/46039041/155058205.pdf">AssemblyDrawingONAVITAL_BOTTOM.pdf</a> (application/pdf)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/46039041/154796052.pdf">AssemblyDrawingONAVITAL_TOP.pdf</a> (application/pdf)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/46039041/154894344.pdf">Layer4_Bottom_ONAVITAL.pdf</a> (application/pdf)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/46039041/154861577.pdf">Layer3_Inner2_ONAVITAL.pdf</a> (application/pdf)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/46039041/154927115.pdf">Layer2_Inner1_ONAVITAL.pdf</a> (application/pdf)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/46039041/154730501.pdf">Layer1_Top_ONAVITAL.pdf</a> (application/pdf)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/46039041/154042409.pdf">Layer3_Inner2_ONAVITAL.pdf</a> (application/pdf)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/46039041/155123739.pdf">Layer1_Top_ONAVITAL.pdf</a> (application/pdf)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/46039041/155222033.pdf">Layer4_Bottom_ONAVITAL.pdf</a> (application/pdf)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/46039041/155025432.pdf">Layer2_Inner1_ONAVITAL.pdf</a> (application/pdf)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/46039041/235372548.docx">Prototype ONAVITALv2.0.1 report.docx</a> (application/vnd.openxmlformats-officedocument.wordprocessingml.document)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/46039041/291864582.pdf">AssemblyDrawingsBOTTOM_OV_3.0.1.pdf</a> (application/pdf)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/46039041/292225033.pdf">AssemblyDrawingsTOP_OV_3.0.1.pdf</a> (application/pdf)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/46039041/291897355.zip">ONAVITAL 3.0.1 PCB gerbers.zip</a> (application/zip)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/46039041/291897361.pdf">ONAVITAL 3.0.1 PCB schematic.pdf</a> (application/pdf)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/46039041/361168950.pdf">Schematic ONAVITAL_3.1.0.pdf</a> (application/pdf)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/46039041/361627664.pdf">Assembly_Drawings_OV3.1.0_Bottom.pdf</a> (application/pdf)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/46039041/361496602.pdf">Assembly_Drawings_OV3.1.0_Top.pdf</a> (application/pdf)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/46039041/362414089.pdf">Assembly_Drawings_OV3.1.0_Bottom.pdf</a> (application/pdf)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/46039041/361299996.pdf">Assembly_Drawings_OV3.1.0_Top.pdf</a> (application/pdf)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/46039041/361136192.rar">Gerbers_OV3.1.0.rar</a> (binary/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/46039041/361660452.rar">Pick&amp;Place_OV3.1.0.rar</a> (binary/octet-stream)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/46039041/361496613.xlsx">BOM_ONAVITAL3.1.0.xlsx</a> (application/vnd.openxmlformats-officedocument.spreadsheetml.sheet)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Jun 30, 2025 15:49</p>
+                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>
